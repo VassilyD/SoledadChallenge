@@ -2,3 +2,26 @@
 	padding-top: 100px;
 	position: relative;
 }
+/*
+.img-corps {
+	margin-bottom: 28px;
+}
+*/
+.img-responsive {
+	width: 100%;
+}
+
+.embed-responsive-15by10 {
+	padding-bottom: 66.67%
+}
+
+.category, .titre {
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.auteur {
+	text-align: center;
+	margin-bottom: 10px;
+}
