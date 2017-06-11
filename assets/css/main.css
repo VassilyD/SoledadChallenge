@@ -318,22 +318,71 @@ div.carouselll {
 
  /*pagination*/
 
+.aaa{
+	display: inline;
 
+}
 
 /*liste instagram*/
 
 
 footer{
-	background-color: black;
+	background-color: #212121;
 	height: 500px;
 }
 
-.logo2{
-
-    
-}
 .copyrigth{
-	text-align: center, ;
+	text-align: center; ;
 	font-style: italic;
 }
 
+/* SOCIAL ICONS FOOTER */
+
+
+.social a {
+  display: inline-block;
+  align-items: center;
+}
+
+.social i {
+ 
+  text-align: center;
+  padding-top: 12px;
+}
+
+ul#enligne li {
+	display:inline  ;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #999;
+
+}
+ul#enligne p {
+ 	font-size: 10px;
+    line-height: 18px;
+ }
+
+ 
+.social::after {
+	display: inline-block;
+	border: 0.1px solid #A9A9A9;
+	width : 80%;
+}
+
+
+/*circles icons */
+
+.rond-footer{
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
+    border-radius: 50%;
+    background: none;
+    color: #999;
+    border: 1px solid #999;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+ 
+
+ 
