@@ -29,10 +29,106 @@ h2 {
  	margin-bottom: 51px;
  }
 
+
+/* header*/
+.tete{
+  height: 300px;
+}
+
+.logo{
+  float: center;
+  padding-top: 100px;
+  padding-left: 33%;
+}
+
+.slogan{
+  font-family: "PT serif", "serif";
+  font-style: italic;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-left: 42%;
+}
+
+/* carousel*/
+
+.slides{
+  position: ;
+}
+
+div.carouselll {
+  width: 100%;
+  height: 500px;
+  overflow:hidden;
+  text-align:center;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+
+.rectangulo {
+   width: 500px;
+   height: 150px;
+   text-align: center;
+   background-color: white;
+   position: absolute;
+   top: 50%; left: 50%; /* à 50%/50% du parent référent */
+   transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+   z-index: 2;
+   float: center;
+
+}
+
+.positionText {
+  position: absolute;
+  top: 50%; left: 33%; /* poussé de la moitié de hauteur du référent */
+  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+}
+
+.feat-time {
+    height: 32px;
+    line-height: 32px;
+    display: block;
+    width: 120px;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #000000;
+    position: absolute;
+    z-index: 20;
+    top: -10px;
+    left: 50%;
+    margin-left: -60px;
+}
+.feat-time:after {
+    border-left-color: #000000;
+    right: -32px;
+}
+.feat-time:before {
+    border-left-color: #000000;
+    left: -32px;
+}
+.rectBord:before {
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    position: absolute;
+    border: 1px solid #DEDEDE;
+    display: block;
+    content: "";
+}
+
+/*----- fin du carousel-----/*/
+
+
+
 .header-maison {
 	padding-top: 100px;
 	position: relative;
 }
+
+
 /*
 .img-corps {
 	margin-bottom: 28px;
@@ -218,3 +314,26 @@ h2 {
  .share-box a:first-child {
  	margin-left: 0;
  }
+
+
+ /*pagination*/
+
+
+
+/*liste instagram*/
+
+
+footer{
+	background-color: black;
+	height: 500px;
+}
+
+.logo2{
+
+    
+}
+.copyrigth{
+	text-align: center, ;
+	font-style: italic;
+}
+
