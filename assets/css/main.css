@@ -29,9 +29,7 @@ h2 {
  	margin-bottom: 51px;
  }
 
-
-
-/*--------- barre de navigation ---*/
+/* barre de navigation */
 
 .nav li {
 	font-family: 'Playfair Display', serif;
@@ -52,12 +50,9 @@ h2 {
 	-moz-transition: all 0.2s;
 }
 
-/*---------- fin navbar ----------*/
+/* fin navbar */
 
-
-
-/*---------- header --------------*/
-
+/* header*/
 .tete{
   height: 300px;
   background-color: #f5f5f5;
@@ -93,36 +88,21 @@ h2 {
 	margin: auto;
 }
 
-.header-slogan .slogan::before {
+.header-slogan .slogan::before, .header-slogan .slogan::after {
 	content: "";
 	height: 1px;
 	display: block;
 	width: 60px;
 	background: #dedede;
   	vertical-align: middle;
-	position: relative;
-	top: 11px;
-	left: 15px;
 }
 
 .header-slogan .slogan::after {
-	content: "";
-	height: 1px;
-	display: block;
-	width: 60px;
-	background: #dedede;
-  	vertical-align: middle;
-	position: relative;
-	top: -11px;
-	left: 100%;
-    transform: translateX(-75px);
+	left: auto;
+	right: 100%;
 }
 
-/*---------- fin de header --------*/
-
-
-
-/*---------- carousel -------------*/
+/* carousel*/
 
 .slides{
   position: ;
@@ -178,34 +158,12 @@ div.carouselll {
     margin-left: -60px;
 }
 .feat-time:after {
-    background: #000000;
-    left: -32px;
-	content: "";
-	display: inline-block;
-	font-size: 12px;
-	position: absolute;
-	left: 91.2%;
-	top: 5px;
-	width: 22px;
-	height: 22px;
-	transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
+    border-left-color: #000000;
+    right: -32px;
 }
 .feat-time:before {
-    background: #000000;
+    border-left-color: #000000;
     left: -32px;
-	content: "";
-	display: inline-block;
-	font-size: 12px;
-	position: absolute;
-	left: -9.6%;
-	top: 5px;
-	width: 22px;
-	height: 22px;
-	transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
 }
 .rectBord:before {
     top: 5px;
@@ -247,13 +205,21 @@ div.carouselll {
 	-moz-transition: 2s;
 }
 
-/*--------- fin du carousel -------/*/
+/*----- fin du carousel-----/*/
 
 
 
+.header-maison {
+	padding-top: 100px;
+	position: relative;
+}
 
-/*--------- Articles ---------------*/
 
+/*
+.img-corps {
+	margin-bottom: 28px;
+}
+*/
 .img-responsive {
 	width: 100%;
 }
@@ -300,6 +266,30 @@ div.carouselll {
     margin: 0 0 5px 0;
 }
 
+/*
+.category > a.a-cat::after {
+	content: "";
+	display: inline-block;
+	border: 1px solid #6eb48c;
+	font-size: 12px;
+	margin-left: 11px;
+	width: 3px;
+	height: 3px;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	border-color: #a60505;
+}
+
+.category > a.a-cat {
+	color: #a60505;
+	font-size: 12px;
+	line-height: 1.2;
+	margin: 0 18px 0 0;
+	vertical-align: top;
+}
+*/
+
 .category > a.a-cat, .feat-category > a.a-cat {
 	font-size: 12px;
 	color: #a60505;
@@ -326,8 +316,8 @@ div.carouselll {
 	position: absolute;
 	top: 50%;
 	margin-top: -3px;
-	width: 5px;
-	height: 5px;
+	width: 3px;
+	height: 3px;
 	transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
@@ -419,7 +409,7 @@ div.carouselll {
     clear: none;
  }
 
- .share-box {
+ .share-box {    
  	float: none !important;
     padding: 0 10px;
     position: relative;
@@ -441,13 +431,32 @@ div.carouselll {
  	margin-left: 0;
  }
 
-/*-------- Fin articles -----------*/
 
+ /*pagination*/
 
+.aaa{
+	text-align: center;
+}
 
+/*ROW pour about me*/
 
- /*------- pagination -------------*/
+.titre-about{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    color: #313131;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    border-bottom: solid #313131 1px;
+    margin-bottom: 3px;
+}
+ 
+.ligne2{
+    border-top: solid 1px #313131;
+    padding-top: 20px;
+}
 
+<<<<<<< HEAD
 .aaa{
 	display: inline;
 	width: 100%;
@@ -459,12 +468,53 @@ div.carouselll {
 	position: absolute;
 	left: 48%;
 	margin: auto;
+=======
+.ligne3 {
+    border-top: solid 1px #313131;
+    margin: 2px;
+    padding-top: 20px;
 }
 
-/*-------- liste instagram --------*/
+.col-lg-7 p{
+    font-family: 'Lato', sans-serif;
+    color: #939393;
+}
+
+h4 {
+	font-family: 'Playfair Display', serif;
+    color: #313131;
+	font-size: 14px;
+	font-weight: 900;
+	display:inline-block;
+	text-decoration: none;
+
+}
+
+h4 a:hover{
+    color: #a60505;                 
+	text-decoration: none;
+	-o-transition:.2s;
+	-ms-transition:.2s;
+	-moz-transition:.2s;
+	-webkit-transition:.2s;
+	transition:.2s;
+>>>>>>> 42aba650506426d43cadbeed4c7db08229d1d475
+}
+
+
+.col-lg-4 .row{
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 17px;
+    padding-top: 17px;
+    margin:auto;
+    width: 100%;
+    height: auto;
+    padding-left: 0px;
+}
 
 
 
+/*liste instagram*/
 
 /*-------- lignes d'images --------*/
 
@@ -488,7 +538,7 @@ p.carre{
 	letter-spacing: 1.5px;
 	height:40px;
 	color: black;
-	padding:20px 20px;	
+	padding:10px 10px 20px 10px;	
 	height:50px;
 	font-family: 'Playfair Display', serif;
 	font-weight: 900;
@@ -500,10 +550,6 @@ p.carre{
     border-top: solid 1px #313131;
     padding-top: 20px;
 }
-
-
-
-
 
 
 footer{
@@ -537,10 +583,23 @@ ul#enligne li {
     color: #999;
 
 }
-ul#enligne p {
- 	font-size: 10px;
-    line-height: 18px;
- }
+ 
+ 
+ul#enligne li a span {
+	color: #999;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+ul#enligne li a:hover span {
+	color: #FFFFFF;
+}
+ul#enligne li a:hover i {
+	background: #FFFFFF;
+	color: #999;
+	border-color: #999;
+}
 
  
 .social::after {
