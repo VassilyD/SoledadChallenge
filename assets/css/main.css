@@ -100,8 +100,9 @@ h2 {
 	width: 60px;
 	background: #dedede;
   	vertical-align: middle;
-  	position: absolute;
-	left: 0;
+	position: relative;
+	top: 11px;
+	left: 15px;
 }
 
 .header-slogan .slogan::after {
@@ -111,9 +112,12 @@ h2 {
 	width: 60px;
 	background: #dedede;
   	vertical-align: middle;
-  	position: absolute;
-	right: 0;
+	position: relative;
+	top: -11px;
+	left: 100%;
+    transform: translateX(-75px);
 }
+
 /*---------- fin de header --------*/
 
 
@@ -174,12 +178,34 @@ div.carouselll {
     margin-left: -60px;
 }
 .feat-time:after {
-    border-left-color: #000000;
-    right: -32px;
+    background: #000000;
+    left: -32px;
+	content: "";
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	left: 91.2%;
+	top: 5px;
+	width: 22px;
+	height: 22px;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
 }
 .feat-time:before {
-    border-left-color: #000000;
+    background: #000000;
     left: -32px;
+	content: "";
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	left: -9.6%;
+	top: 5px;
+	width: 22px;
+	height: 22px;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
 }
 .rectBord:before {
     top: 5px;
@@ -393,7 +419,7 @@ div.carouselll {
     clear: none;
  }
 
- .share-box {    
+ .share-box {
  	float: none !important;
     padding: 0 10px;
     position: relative;
