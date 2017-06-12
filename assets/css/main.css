@@ -29,24 +29,77 @@ h2 {
  	margin-bottom: 51px;
  }
 
+/* barre de navigation */
+
+.nav li {
+	font-family: 'Playfair Display', serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 58px;
+	text-transform: uppercase;
+}
+
+.nav li a {
+
+}
+
+.nav li a:hover {
+	text-decoration: underline;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+}
+
+/* fin navbar */
 
 /* header*/
 .tete{
   height: 300px;
+  background-color: #f5f5f5;
 }
 
 .logo{
-  float: center;
-  padding-top: 100px;
-  padding-left: 33%;
+    padding-top: 100px;
+}
+
+.logo img {
+	/*permet de cetrer l'élément horizontalement*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /**/
 }
 
 .slogan{
   font-family: "PT serif", "serif";
   font-style: italic;
-  font-size: 20px;
-  padding-top: 15px;
-  padding-left: 42%;
+  font-weight: bold;
+  line-height: 1.5;
+  font-size: 14px;
+  padding-top: 85px;
+  text-align: center;
+  letter-spacing: 1px;
+  vertical-align: top;
+	color: #313131;
+}
+
+.header-slogan {
+	width: 431px;
+	margin: auto;
+}
+
+.header-slogan .slogan::before, .header-slogan .slogan::after {
+	content: "";
+	height: 1px;
+	display: block;
+	width: 60px;
+	background: #dedede;
+  	vertical-align: middle;
+}
+
+.header-slogan .slogan::after {
+	left: auto;
+	right: 100%;
 }
 
 /* carousel*/
@@ -79,9 +132,13 @@ div.carouselll {
 }
 
 .positionText {
-  position: absolute;
-  top: 50%; left: 33%; /* poussé de la moitié de hauteur du référent */
-  transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+	/*permet de cetrer l'élément verticalement et horizontalement */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /**/
+    width: 100%;
 }
 
 .feat-time {
@@ -119,6 +176,35 @@ div.carouselll {
     content: "";
 }
 
+.left .fa {
+	/*permet de cetrer l'élément verticalement*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /**/
+    left: 15%;
+}
+
+.right .fa {
+	/*permet de cetrer l'élément verticalement*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /**/
+    right: 15%;
+}
+
+.carousel-control .fa {
+	visibility: hidden;
+}
+
+#myCarousel:hover .fa {
+	visibility: visible;
+	transition: 2s;
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+}
+
 /*----- fin du carousel-----/*/
 
 
@@ -141,6 +227,13 @@ div.carouselll {
 .embed-responsive-15by10 {
 	padding-bottom: 66.67%;
 	margin-bottom: 28px;
+	transition: opacity 0.3s;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity .3s;
+}
+
+.embed-responsive-15by10:hover {
+	opacity: 0.85;
 }
 
 .article-header {
@@ -163,6 +256,14 @@ div.carouselll {
 	text-align: center;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+}
+
+.feat-category, .feat-titre {
+	text-transform: uppercase;    
+	position: relative;
+    z-index: 10;
+    text-align: center;
+    margin: 0 0 5px 0;
 }
 
 /*
@@ -189,7 +290,7 @@ div.carouselll {
 }
 */
 
-.category > a.a-cat {
+.category > a.a-cat, .feat-category > a.a-cat {
 	font-size: 12px;
 	color: #a60505;
 	text-transform: uppercase;
@@ -206,7 +307,7 @@ div.carouselll {
 	margin-bottom: 5px;
 	position: relative;
 }
-.category > a.a-cat:after {
+.category > a.a-cat:after, .feat-category > a.a-cat:after {
 	content: "";
 	display: inline-block;
 	border: 1px solid #a60505;
@@ -221,17 +322,17 @@ div.carouselll {
 	-moz-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 }
-.category > a.a-cat:hover {
+.category > a.a-cat:hover, .feat-category > a.a-cat:hover {
 	text-decoration: underline;
 }
-.category > a.a-cat:first-child {
+.category > a.a-cat:first-child, .feat-category > a.a-cat:first-child {
 	margin-left: 0;
 }
-.category > a.a-cat:last-child {
+.category > a.a-cat:last-child, .feat-category > a.a-cat:last-child {
 	margin-right: 0;
 	padding: 0;
 }
-.category > a.a-cat:last-child:after {
+.category > a.a-cat:last-child:after, .feat-category > a.a-cat:last-child:after {
 	content: none;
 	display: none;
 }
@@ -247,7 +348,18 @@ div.carouselll {
 	font-size: 18px;
 	color: #313131;
 	letter-spacing: 1px;
-	-webkit-transition: .5s;
+	-o-transition: .3s;
+	-ms-transition: .3s;
+	-moz-transition: .3s;
+	-webkit-transition: .3s;
+}
+
+.titre h2 a:hover {
+	color: #888888;
+}
+
+.feat-header .titre h2 a {
+	font-size: 24px;
 }
 
 .auteur .a-auteur {
@@ -256,6 +368,10 @@ div.carouselll {
 
 .a-auteur a {
 	color: #313131;
+}
+
+.a-auteur a:hover {
+	color: #a60505;
 }
 
 .auteur span.a-auteur::after {

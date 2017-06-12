@@ -9,7 +9,7 @@
 
 		<!-- Bootstrap -->
 		<link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 
 <!-- css principale -->
     <link href="assets/css/main.css" rel="stylesheet">
@@ -50,13 +50,15 @@
 
     <!-- Header -->
     <div class="tete">
-        <div class="logo">
-          <a href=""><img src="./assets/img/logo-f.png"></a>
-        </div>
-        <div>
-          <p class="slogan">for fashion & life style bloggers</p>   <!-- lignes grises -->
-        </div>
+      <div class="logo">
+        <a href="">
+          <img src="./assets/img/logo-f.png">
+        </a>
       </div>
+      <div class="header-slogan">
+        <p class="slogan">for fashion & life style bloggers</p>   <!-- lignes grises -->
+      </div>
+    </div>
 
 
 <!-- Responsive images  Bootstrap Carousel Plugin -->
@@ -65,9 +67,17 @@
         <div class="rectangulo rectBord">
           <span class="feat-time">Sep 3, 2015</span>
           <span class="positionText">
-            <p>OUTFITS TRENDY</p>
-            <p>IN STYLE - JEAN LOVER </p>
-            <p>by Marina | 3 comments</p>
+          <div class="feat-header">
+            <div class="feat-category">
+              <a class="a-cat" href="http://pencidesign.com/soledad/soledad-fashion-lifestyle/category/style/trendy/">Trendy</a>
+            </div>
+            <div class="titre">
+              <h2><a href="http://pencidesign.com/soledad/soledad-fashion-lifestyle/in-style-jean-lover/">In style - jean lover</a></h2>
+            </div>
+            <div class="auteur">
+              <span class="a-auteur">By <a href="http://pencidesign.com/soledad/soledad-fashion-lifestyle/author/fashion/">Marina</a></span>21 octobre 2015
+            </div>
+          </div>
           </span>
         </div>
          <!-- Indicators -->
@@ -92,18 +102,18 @@
            </div>
         </div>
 
-         <!-- Left and right controls -->
-         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-           <span class="glyphicon glyphicon-chevron-left"></span>
-           <span class="sr-only">Previous</span>
-         </a>
-         <a class="right carousel-control" href="#myCarousel" data-slide="next">
-           <span class="glyphicon glyphicon-chevron-right"></span>
-           <span class="sr-only">Next</span>
-         </a>
-       </div>
-       <br>
-       <br>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="fa fa-angle-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="fa fa-angle-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <br>
+      <br>
 
   
 
