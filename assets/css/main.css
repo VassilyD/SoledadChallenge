@@ -461,6 +461,18 @@ div.carouselll {
 	margin: auto;
 }
 
+.pagination > li > a.current-page {
+	color: #fff;
+    background: #a60505;
+    border-color: #a60505;
+}
+
+.pagination > li > a.current-page:focus {
+	color: #fff;
+    background: #a60505;
+    border-color: #a60505;
+}
+
 /*------- fin de pagination --------*/
 
 /*------- ROW pour about me --------*/
@@ -642,4 +654,49 @@ ul#enligne li a:hover i {
     font-size: 14px;
     transition: all 0.2s ease-in-out;
 }
- 
+
+
+/* = Footer go to top
+-----------------------------------------------------*/
+footer .go-to-top-parent {
+	width: 100%;
+	height: auto;
+	display: block;
+	text-align: center;
+	z-index: 10;
+}
+footer .go-to-top-parent span {
+	color: #999;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	line-height: 1;
+	display: inline-block;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+}
+footer .go-to-top-parent span:before,
+footer .go-to-top-parent span:after {
+	content: " ";
+	display: table;
+}
+footer .go-to-top-parent span:after {
+	clear: both;
+}
+footer .go-to-top-parent i {
+	font-size: 18px;
+	z-index: 5;
+	position: relative;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	color: #999;
+	line-height: 1;
+	margin-bottom: 3px;
+}
+footer .go-to-top:hover span,
+footer .go-to-top:hover i {
+	color: #fff;
+}
